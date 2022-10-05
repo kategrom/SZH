@@ -1,0 +1,297 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+body,
+html{
+  margin: 0;
+  overflow-x: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+ul , li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  width: 1220px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:780px){
+  .container{
+    max-width: 780px;
+  }
+}
+
+@media screen and (max-width:420px){
+  .container{
+    max-width: 420px;
+  }
+}
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+
+
+
+.header{
+  background: #DEFFEB;
+}
+
+.header__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+}
+
+.logo__block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo{
+  margin-right: 25px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__link:hover{
+  font-weight: 500;
+  font-size: 20px;
+  color: #003d18;
+  border-bottom: 1px solid #003d18;
+}
+
+.has-submenu {
+  margin-right: 60px;
+}
+
+.has-submenu:hover{
+  border-bottom: 1px solid black;
+  padding-top: 2px;
+}
+
+.has-submenu:last-child {
+  margin-right: 0;
+}
+
+.sub__menu-item{
+  padding: 10px 15px;
+}
+
+.has-submenu {
+  /* margin-bottom: -15px; */
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.has-submenu:hover{
+  border-bottom: 1px solid black;
+  padding-top: 2px;
+}
+
+.has-submenu:hover .sub-menu {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #DEFFEB;;
+  margin-top: 15px;
+  transform: translateY(5px);
+  transition: 0.35s;
+}
+
+.sub-menu ul{
+  display: grid;
+  grid-template-columns: (2, 1fr);
+}
+
+.header__logo-img{
+  width: 95px;
+  height: 80px;
+}
+
+.school__title{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+
+/* HEADER RESPONSIVE  HEADER RESPONSIVE  HEADER RESPONSIVE */
+
+@media screen and (max-width:420px) {
+  .header__logo-img{
+    width: 35px;
+    height: 30px;
+  }
+
+  .school__title{
+    font-weight: 300;
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .menu__link:hover{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: #003d18;
+    border-bottom: 1px solid #003d18;
+  }
+
+  .li{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 7px;
+    color: #000000;  
+  }
+
+  .menu__link{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 7px;
+    color: #000000;  
+  }
+
+  /* .menu__nav{
+    margin-left: 15px;
+  } */
+
+  .logo__block{
+    margin-right: 10px;
+  }
+
+  .has-submenu {
+    margin-right: 10px;
+  }
+
+  .has-submenu {
+    margin-right: 5px;
+    padding: 5px 10px;
+  }
+
+  .sub__menu-item{
+    padding: 5px 7px;
+  }
+
+  .header__logo{
+    margin-right: 15px;
+  }
+}
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.footer{
+  background-color: #DEFFEB;
+  padding: 30px 0;
+}
+
+.footer__block{
+  display: flex;
+}
+
+.footer__item-container{
+  border-right: 1px solid black;
+  height: 186px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.footer__item-last-container{
+  height: 186px;
+  width: 440px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.first__text{
+  width: 280px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.first__img{
+  width: 414px;
+}
+
+/* .footer__link{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+} */
+
+.contact__link{
+  margin-bottom: 0;
+}
+
+.contact__link-text{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+.contact__link-span{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.link__span-email:hover{
+  color: #003d18;
+  font-weight: 500;
+}
+
+.link__span-tel:hover{
+  color: #003d18;
+  font-weight: 500;
+}
